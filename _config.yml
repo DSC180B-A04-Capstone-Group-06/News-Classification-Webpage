@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: News Classification with Named Entity Recognition
 description: Rachel Ung, Siyu Deng, and Yang Li
+github:
+  url: https://github.com/DSC180B-A04-Capstone-Group-06/DSC180B-NER-Project
