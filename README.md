@@ -1,2 +1,22 @@
+# News Classification With Named Entity Recognition 
+By Rachel Ung, Siyu Deng, and Yang Li.
 
-Please use this link:  https://dsc180b-a04-capstone-group-06.github.io/News-Classification-Webpage/
+## Abstraction 
+
+## Introduction 
+
+## Data Set
+
+## Model
+
+### AutoPhrase based Model
+
+### Pre-trained NER based Model
+
+## Experiment
+
+## Result
+
+## Conclusion
+
+## Reference
