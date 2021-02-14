@@ -1,2 +1,2 @@
 
-Please use this link: https://github.com/DSC180B-A04-Capstone-Group-06/News-Classification-Webpage/
+Please use this link:  https://dsc180b-a04-capstone-group-06.github.io/News-Classification-Webpage/
