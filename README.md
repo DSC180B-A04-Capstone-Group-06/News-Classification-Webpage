@@ -1,6 +1,3 @@
-# News Classification With Named Entity Recognition 
-By Rachel Ung, Siyu Deng, and Yang Li.
-
 ## Abstraction 
 
 ## Introduction 
