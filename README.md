@@ -1,4 +1,4 @@
-## Abstraction 
+## Abstract
 
 ## Introduction 
 
