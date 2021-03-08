@@ -13,10 +13,12 @@
   - includes 2,225 documents
   - spans 2004-2005 
   - composed of five categories e.g. Entertainment, Technology, Politics, Business, Sports
+  - https://www.kaggle.com/pariza/bbc-news-summary
   
   **20 News Groups dataset:** 
   - includes 18,000 news groups posts
   - composed of twenty categories e.g. Computer, Science, Politics, Religion, etc.
+  - http://qwone.com/~jason/20Newsgroups/
 
 ## Models
 
