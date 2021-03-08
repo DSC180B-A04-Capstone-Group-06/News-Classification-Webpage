@@ -42,16 +42,16 @@ For our experiment, we have used the BERT-based uncased model as a baseline trai
 
 **p-value** | **Phrases**
 ---|---
-    0.9888640523 | george bush
-    0.9873576373 | red sox 
-    0.9863977181 | attorney general
-    0.9858852675 | gulf war
-    0.9856553314 | silicon graphics
-    0.9853577556 | vice president
-    0.9849079262 | united nations
-    0.9846998338 | soviet union
-    0.9845569952 | north america
-    0.9842812319 | south africa
+0.9888640523 | george bush
+0.9873576373 | red sox 
+0.9863977181 | attorney general
+0.9858852675 | gulf war
+0.9856553314 | silicon graphics
+0.9853577556 | vice president
+0.9849079262 | united nations
+0.9846998338 | soviet union
+0.9845569952 | north america
+0.9842812319 | south africa
 
 ## Experiment
 
