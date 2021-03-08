@@ -69,6 +69,7 @@ The BERT classification on the five-class BBC News dataset does not outperform a
 
 For the 20 News Group dataset, the SVM+ALL(TF-IDF) classifer also outperformed the other models, with the F1-Score and Accuracy being 0.84. Considering the classes are huge (i.e. 20 classes), these results verify our model is high-performing. Applying our best model on the five-class BBC News dataset, we attained a F1-Score at 0.9525, and Accuracy at 0.9528; while for the 20 News Group, we yielded a F1-Score at 0.8463 and Accuracy at 0.8478. 
 
+## Acknowledgments
 ***We would like to give special thanks to our mentor Professor Jingbo Shang, who guided us our project and provided constructive suggestions alone the way. We would also like to give special thanks to Professor Aaron Fraenkel and our teaching assistants, who have given us meaningful lectures about structuring our data science project and providing suggestions from our code to our presentation.***
 
 ## References
