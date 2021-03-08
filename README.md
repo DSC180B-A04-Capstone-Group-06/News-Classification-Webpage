@@ -12,16 +12,11 @@
   
   - includes 2,225 documents
   - spans 2004-2005 
-  - composed of five categories
-    - entertainment
-    - technology
-    - politics
-    - business
-    - sports
+  - composed of five categories: Entertainment, Technology, Politics, Business, Sports
   
   **20 News Groups dataset:** 
   - includes 18,000 news groups posts
-  - composed of 20 categories e.g. Computer, Science, Politics, Religion, etc.
+  - composed of twenty categories e.g. Computer, Science, Politics, Religion, etc.
 
 ## Models
 
@@ -35,7 +30,6 @@ BERT (Bidirectional Encoder Representations from Transformers) is a general-purp
 
 For our experiment, we have used the BERT-based uncased model as a baseline trained by the HuggingFace library with 110M parameters, 12 layers, 768-hidden, and 12-heads. For fine-tuning, we used the suggested parameters of max-seq-length=128, training epoch=3, and warm-up proportion=0.1. Then, we created the dataframe for BBC News summary data and used the model to predict the entity by each sentence of the document. We followed the same procedure for the 20 News dataset.
 
-_reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 
 ## Experiment
 
@@ -45,11 +39,27 @@ A **Support Vector Machine (SVM)** is a supervised model intended for solving cl
 
 The architecture of BERT's transfer learning is made up by a fully-connected layer, a drop-out layer, a **Rectified Linear Unit (ReLU)** activation layer, a second fully-connected layer, and a **soft-max** activation layer. For the optimizer, we used **AdamW**, an improved version of **Adam**, and opted to use the _negative_ log-likelihood loss, which is well-suited for multiple-class classification. For training, we used a learning rate of exp(-4) for 40 epochs. Due to GPU resources, we were only able to perform training and evaluation on the BBC News dataset.
 
+_reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 
-## Result
+## Results
 
-### Result Matrix
+### 
 
 ## Conclusion
 
-## Reference
+The BERT classification on the five-class BBC News dataset does not outperform any of our implemented models. From our results table, we observed that our models have F1-Score and Accuracy performances at around .95, indicating they are well-performing classifiers. The best of them is the SVM+ALL(TF-IDF) classifier, or the Support Vector Machine with the All Vector Vocabulary List and Tf-Idf Representations, which uses the vocabulary from both NER results and AutoPhrase results. Because the quality phrases between different domains are likely to differ, we expect these results to at as optimal features for our predictors. 
+
+For the 20 News Group dataset, the SVM+ALL(TF-IDF) classifer also outperformed the other models with the F1-Score and Accuracy being .84. Considering the classes are huge (i.e. 20 classes), this result verifies our model is high-performing. Applying our best model on the five-class BBC News dataset, we attained a F1-Score at 0.9525, and Accuracy at 0.9528, while for the 20 News Group, we yielded a F1-Score at 0.8463 and Accuracy at 0.8478. 
+
+***We would like to give special thanks to our mentor Professor Jingbo Shang, who helped us progress throughout our project.***
+
+## References
+
+1. Jialu Liu*, Jingbo Shang*, Chi Wang, Xiang Ren and Jiawei Han, "Mining Quality Phrases from Massive Text Corpora”, Proc. of 2015 ACM SIGMOD Int. Conf. on Management of Data (SIGMOD'15), Melbourne, Australia, May 2015. (* equally contributed)
+
+2. Jingbo Shang, Jialu Liu, Meng Jiang, Xiang Ren, Clare R Voss, Jiawei Han, "Automated Phrase Mining from Massive Text Corpora", accepted by IEEE Transactions on Knowledge and Data Engineering, Feb. 2018.
+
+3. Thomas Wolf and Lysandre Debut and Victor Sanh and Julien Chaumond and Clement Delangue and Anthony Moi and Pierric Cistac and Tim Rault and Rémi Louf and Morgan Funtowicz and Joe Davison and Sam Shleifer and Patrick von Platen and Clara Ma and Yacine Jernite and Julien Plu and Canwen Xu and Teven Le Scao and Sylvain Gugger and Mariama Drame and Quentin Lhoest and Alexander M. Rush, "Transformers: State-of-the-Art Natural Language Processing", in Proc. of the 2020 Conference on Empirical Methods in Natural Language (EMNLP' 20).
+
+4. "Transfer Learning for NLP: Fine-Tuning BERT for Text Classification". 
+https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
