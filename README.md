@@ -13,16 +13,18 @@
   - composed of five categories e.g. Entertainment, Technology, Politics, Business, Sports
   - https://www.kaggle.com/pariza/bbc-news-summary
 
+  **20 News Groups dataset:** 
+  - includes 18,000 news groups posts
+  - composed of twenty categories e.g. Computer, Science, Politics, Religion, etc.
+  - http://qwone.com/~jason/20Newsgroups/
+
 ![Entertainment Word Cloud](images/entertainment.png)
 ![Technology Word Cloud](images/tech.png)
 ![Politics Word Cloud](images/politics.png)
 ![Business Word Cloud](images/business.png)
 ![Sports Word Cloud](images/sport.png)
   
-  **20 News Groups dataset:** 
-  - includes 18,000 news groups posts
-  - composed of twenty categories e.g. Computer, Science, Politics, Religion, etc.
-  - http://qwone.com/~jason/20Newsgroups/
+
 
 ## Models
 
