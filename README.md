@@ -55,6 +55,7 @@ For our experiment, we have used the BERT-based uncased model as a baseline trai
 
 **Word Cloud for extracted Entities**
 
+<center><img src="images/ner_wc.png"/></center>
 ![NER Word Cloud](images/ner_wc.png)
 
 
