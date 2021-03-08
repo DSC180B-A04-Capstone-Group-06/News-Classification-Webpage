@@ -7,7 +7,16 @@
 
   For our project, we have decided to use two news data sets: a BBC News data set and a 20 News data set.
   
-  **BBC News dataset:** includes 2,225 documents and spans 2004-2005; composed of five categories (entertainment, technology, politics, business, and sports.
+  **BBC News dataset:** 
+  
+  - includes 2,225 documents
+  - spans 2004-2005 
+  - composed of five categories
+    - entertainment
+    - technology
+    - politics
+    - business
+    - sports
   
   **20 News Groups dataset:** includes 18,000 news groups posts; composed of 20 categories (Computer, Science, Politics, Religion, etc.)
 
