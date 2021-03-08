@@ -19,7 +19,9 @@
     - business
     - sports
   
-  **20 News Groups dataset:** includes 18,000 news groups posts; composed of 20 categories (Computer, Science, Politics, Religion, etc.)
+  **20 News Groups dataset:** 
+  - includes 18,000 news groups posts
+  - composed of 20 categories e.g. Computer, Science, Politics, Religion, etc.
 
 ## Model
 
