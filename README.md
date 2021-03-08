@@ -5,8 +5,6 @@
   Text classification is an important NLP task, which can be understood as a given set of text and labels. We want to create a classifier that can classify them in addition to other texts. Text classification tasks mainly involve understanding the text and extracting high quality phrases for model training. For example, if a text has "government" or "minister" as a frequent phrase or word, it is more likely to belong to 'Politics'. As such, it is important for us to extract quality phrases and make sure they represent these documents well.
 
 ## Data Sets
-
-  For our project, we have decided to use two news data sets: a BBC News data set and a 20 News data set.
   
   **BBC News dataset:** 
   
