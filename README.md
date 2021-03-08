@@ -55,11 +55,11 @@ For our experiment, we have used the BERT-based uncased model as a baseline trai
 
 ## Experiment
 
-**Logistic Regression** is a binary classifier model that is widely adopted for many research projects and real-world applications. As such, we included this model in our experiment as well. This model is optimized by minimizing the **Logistic Loss** (Equation 1). 
+**Logistic Regression** is a binary classifier model that is widely adopted for many research projects and real-world applications. As such, we included this model in our experiment as well. This model is optimized by minimizing the **Logistic Loss**. 
 
 ![Logistic Loss](images/Logistic_Loss.png)
 
-A **Support Vector Machine (SVM)** is a supervised model intended for solving classification problems. The SVM algorithm creates a line or a hyper-plane, which separates the data into classes. This model is optimized by minimizing the **Hinge Loss** (Equation 2)
+A **Support Vector Machine (SVM)** is a supervised model intended for solving classification problems. The SVM algorithm creates a line or a hyper-plane, which separates the data into classes. This model is optimized by minimizing the **Hinge Loss**.
 
 ![Hinge Loss](images/Hinge_Loss.png)
 
