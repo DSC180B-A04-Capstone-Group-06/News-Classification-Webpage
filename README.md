@@ -35,7 +35,7 @@ BERT (Bidirectional Encoder Representations from Transformers) is a general-purp
 
 For our experiment, we have used the BERT-based uncased model as a baseline trained by the HuggingFace library with 110M parameters, 12 layers, 768-hidden, and 12-heads. For fine-tuning, we used the suggested parameters of max-seq-length=128, training epoch=3, and warm-up proportion=0.1. Then, we created the dataframe for BBC News summary data and used the model to predict the entity by each sentence of the document. We followed the same procedure for the 20 News dataset.
 
-[a link] (https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/)
+_reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 
 ## Experiment
 
