@@ -65,7 +65,7 @@ A **Support Vector Machine (SVM)** is a supervised model intended for solving cl
 
 The architecture of BERT's transfer learning is made up by a fully-connected layer, a drop-out layer, a **Rectified Linear Unit (ReLU)** activation layer, a second fully-connected layer, and a **soft-max** activation layer. For the optimizer, we used **AdamW**, an improved version of **Adam**, and opted to use the _negative_ log-likelihood loss, which is well-suited for multiple-class classification. For training, we used a learning rate of exp(-4) for 40 epochs. Due to GPU resources, we were only able to perform training and evaluation on the BBC News dataset.
 
-![NER Word Cloud](images/ner wc.png)
+![NER Word Cloud](images/ner_wc.png)
 
 _reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 
