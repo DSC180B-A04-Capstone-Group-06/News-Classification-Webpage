@@ -83,13 +83,13 @@ SVM + ALL(TF-IDF) | 0.9639 | 0.9640
 
 ### 20 News Dataset Validation Results
 
-**Model**  | **Weighted** | **Accuracy**
---- | --- | ---
-LOG + UNI(BOW) | 0.7751 | 0.7759
-SVM + UNI(BOW) | 0.7629 | 0.7589
-SVM + ET(TF-IDF) | 0.8259 | 0.8282
-SVM + AP(TF-IDF) | 0.8105 | 0.8125
-SVM + ALL(TF-IDF) | 0.8466 | 0.8483
+                   **Model**  | **Weighted** | **Accuracy**
+                   --- | --- | ---
+                   LOG + UNI(BOW) | 0.7751 | 0.7759
+                   SVM + UNI(BOW) | 0.7629 | 0.7589
+                   SVM + ET(TF-IDF) | 0.8259 | 0.8282
+                   SVM + AP(TF-IDF) | 0.8105 | 0.8125
+                   SVM + ALL(TF-IDF) | 0.8466 | 0.8483
 
 ## Conclusion
 
