@@ -12,6 +12,8 @@
   - spans 2004-2005 
   - composed of five categories e.g. Entertainment, Technology, Politics, Business, Sports
   - https://www.kaggle.com/pariza/bbc-news-summary
+
+![](images/tech.png)
   
   **20 News Groups dataset:** 
   - includes 18,000 news groups posts
