@@ -23,11 +23,17 @@
   - includes 18,000 news groups posts
   - composed of 20 categories e.g. Computer, Science, Politics, Religion, etc.
 
-## Model
+## Models
 
-### AutoPhrase based Model
+### AutoPhrase-based Model
 
-### Pre-trained NER based Model
+  AutoPhrase has two major modules: Robust Positive-Only Distant Training and POS-Guided Phrasal Segmentation. The first module trains the model and determines the quality score for phrases. The second module determines which tokens should be combined together and constitute a phrase. AutoPhrase first estimates the quality score from frequent n-gram phrases. With these results, it then utilizes the segmentation module to revise the segmentation. Rather than using the n-gram based phrases, AutoPhrase estimates the final quality score based on the segmentation results. Since the AutoPhrase method is applicable to any domain and language, we utilized this method on both of our datasets to extract quality phrases. With these quality phrases, we adopt the same Bag-of-Words and TF-IDF processes to encode them into vectors.
+
+### Pre-trained NER-based Model
+
+BERT (Bidirectional Encoder Representations from Transformers) is a general-purpose language model trained on the large dataset. This pre-trained model can be fine-tuned and used for different tasks such as sentiment analysis, question answering systems, sentence classification, and Named-Entity Recognition. Named-Entity Recognition is the process of extracting noun entity from text data and classifies them into predefined categories e.g. person, location, organization and others. Hence, we can use a BERT-based Named-Entity Recognition model, fine-tuned on the CoNLL 2003 dataset, to extract noun entities in the BBC News data set and 20 News group datasets. 
+
+For our experiment, we have used the BERT-based uncased model as a baseline trained by the HuggingFace library with 110M parameters, 12 layers, 768-hidden, and 12-heads. For fine-tuning, we used the suggested parameters of max-seq-length=128, training epoch=3, and warm-up proportion=0.1. Then, we created the dataframe for BBC News summary data and used the model to predict the entity by each sentence of the document. We followed the same procedure for the 20 News dataset.
 
 ## Experiment
 
