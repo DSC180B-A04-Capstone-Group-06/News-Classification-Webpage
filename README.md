@@ -18,11 +18,11 @@
   - composed of twenty categories e.g. Computer, Science, Politics, Religion, etc.
   - http://qwone.com/~jason/20Newsgroups/
 
-![Entertainment Word Cloud](images/entertainment.png)
-![Technology Word Cloud](images/tech.png)
-![Politics Word Cloud](images/politics.png)
-![Business Word Cloud](images/business.png)
-![Sports Word Cloud](images/sport.png)
+![Entertainment Word Cloud](images/entertainment.png){: width="250" }
+![Technology Word Cloud](images/tech.png){: width="250" }
+![Politics Word Cloud](images/politics.png){: width="250" }
+![Business Word Cloud](images/business.png){: width="250" }
+![Sports Word Cloud](images/sport.png){: width="250" }
   
 
 
