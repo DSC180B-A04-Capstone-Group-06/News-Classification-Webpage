@@ -47,6 +47,16 @@ _reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-
 
 **Model**  | **Weighted** | **Accuracy**
 --- | --- | ---
+LOG + UNI(BOW) | 0.9527 | 0.9528
+SVM + UNI(BOW) | 0.9485 | 0.9483
+SVM + ET(TF-IDF) | 0.9529 | 0.9528
+SVM + AP(TF-IDF) | 0.9462 | 0.9461
+SVM + ALL(TF-IDF) | 0.9639 | 0.9640
+
+### 20 News Dataset Validation Results
+
+**Model**  | **Weighted** | **Accuracy**
+--- | --- | ---
 LOG + UNI(BOW) | 0.7751 | 0.7759
 SVM + UNI(BOW) | 0.7629 | 0.7589
 SVM + ET(TF-IDF) | 0.8259 | 0.8282
