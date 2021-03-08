@@ -2,7 +2,7 @@
 
   Text Classification (TC) and Named-Entity Recognition (NER) are two fundamental tasks for many Natural Language Processing (NLP) applications, which involve understanding, extracting information, and categorizing the text. In order to achieve such goals, we utilized AutoPhrase (Jingbo Shang, 2018) and a pre-trained language NER model to extract quality phrases. Using these as part of our features, we are able to achieve high performance for a five class and a twenty class text classification dataset. Our project follows a similar setting as previous works with train, validation, and test datasets and comparing the results across different methods.
   
-  Text classification is an important NLP task, which can be understood as a given set of text and labels. We want to create a classifier that can classify them in addition to other texts. Text classification tasks mainly involve understanding the text and extracting high quality phrases for model training. For example, if a text has "government" or "minister" as a frequent phrase or word, it is more likely to belong to 'Politics'. So, it is important for us to extract quality phrases and make sure they represent these documents well.
+  Text classification is an important NLP task, which can be understood as a given set of text and labels. We want to create a classifier that can classify them in addition to other texts. Text classification tasks mainly involve understanding the text and extracting high quality phrases for model training. For example, if a text has "government" or "minister" as a frequent phrase or word, it is more likely to belong to 'Politics'. As such, it is important for us to extract quality phrases and make sure they represent these documents well.
 
 ## Data Sets
 
@@ -36,6 +36,13 @@ BERT (Bidirectional Encoder Representations from Transformers) is a general-purp
 For our experiment, we have used the BERT-based uncased model as a baseline trained by the HuggingFace library with 110M parameters, 12 layers, 768-hidden, and 12-heads. For fine-tuning, we used the suggested parameters of max-seq-length=128, training epoch=3, and warm-up proportion=0.1. Then, we created the dataframe for BBC News summary data and used the model to predict the entity by each sentence of the document. We followed the same procedure for the 20 News dataset.
 
 ## Experiment
+
+**Logistic Regression** is a binary classifier model that is widely adopted for many research projects and real-world applications. As such, we included this model in our experiment as well. This model is optimized by minimizing the _Logistic Loss_ (Equation 1). 
+
+A **Support Vector Machine (SVM)** is a supervised model intended for solving classification problems. The SVM algorithm creates a line or a hyper-plane, which separates the data into classes. This model is optimized by minimizing the _Hinge Loss_ (Equation 2)
+
+The architecture of BERT's transfer learning is made up by a fully-connected layer, a drop-out layer, a _Rectified Linear Unit (ReLU)_ activation layer, a second fully-connected layer, and a soft-max activation layer. For the optimizer, we used _AdamW_, an improved version of _Adam_, and opted to use the negative _log-likelihood loss)_, which is well-suited for multiple-class classification. For training, we used a learning rate of $$1e^{-4}$$ for 40 epochs. Due to GPU resources, we were only able to perform training and evaluation on the BBC News dataset.
+
 
 ## Result
 
