@@ -12,7 +12,7 @@
   
   - includes 2,225 documents
   - spans 2004-2005 
-  - composed of five categories: Entertainment, Technology, Politics, Business, Sports
+  - composed of five categories e.g. Entertainment, Technology, Politics, Business, Sports
   
   **20 News Groups dataset:** 
   - includes 18,000 news groups posts
