@@ -43,7 +43,15 @@ _reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-
 
 ## Results
 
-### 
+### BBC News Dataset Validation Results
+
+**Model**  | **Weighted** | **Accuracy**
+--- | --- | ---
+LOG + UNI(BOW) | 0.7751 | 0.7759
+SVM + UNI(BOW) | 0.7629 | 0.7589
+SVM + ET(TF-IDF) | 0.8259 | 0.8282
+SVM + AP(TF-IDF) | 0.8105 | 0.8125
+SVM + ALL(TF-IDF) | 0.8466 | 0.8483
 
 ## Conclusion
 
@@ -51,7 +59,7 @@ The BERT classification on the five-class BBC News dataset does not outperform a
 
 For the 20 News Group dataset, the SVM+ALL(TF-IDF) classifer also outperformed the other models with the F1-Score and Accuracy being .84. Considering the classes are huge (i.e. 20 classes), this result verifies our model is high-performing. Applying our best model on the five-class BBC News dataset, we attained a F1-Score at 0.9525, and Accuracy at 0.9528, while for the 20 News Group, we yielded a F1-Score at 0.8463 and Accuracy at 0.8478. 
 
-***We would like to give special thanks to our mentor Professor Jingbo Shang, who helped us progress throughout our project.***
+***We would like to give special thanks to our mentor Professor Jingbo Shang, who advised us throughout our project.***
 
 ## References
 
