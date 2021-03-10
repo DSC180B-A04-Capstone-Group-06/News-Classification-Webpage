@@ -68,7 +68,7 @@ _reference:_ https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-
 
 ### BBC News Dataset Validation Results
 
-**Model**  | **Weighted** | **Accuracy**
+**Model**  | **Weighted F1** | **Accuracy**
 --- | --- | ---
 LOG + UNI(BOW) | 0.9527 | 0.9528
 SVM + UNI(BOW) | 0.9485 | 0.9483
@@ -78,7 +78,7 @@ SVM + ALL(TF-IDF) | 0.9639 | 0.9640
 
 ### 20 News Dataset Validation Results
 
-**Model**  | **Weighted** | **Accuracy**
+**Model**  | **Weighted F1** | **Accuracy**
 --- | --- | ---
 LOG + UNI(BOW) | 0.7751 | 0.7759
 SVM + UNI(BOW) | 0.7629 | 0.7589
