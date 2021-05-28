@@ -86,6 +86,11 @@ SVM + ET(TF-IDF) | 0.8259 | 0.8282
 SVM + AP(TF-IDF) | 0.8105 | 0.8125
 SVM + ALL(TF-IDF) | 0.8466 | 0.8483
 
+UNI: Uni-gram Vocabulary List
+ET : Entity Vocabulary List
+AP : AutoPhrase Vocabulary List
+ALL: All Vectors Vocabulary Lis
+
 ## Conclusion
 
 The BERT classification on the five-class BBC News dataset does not outperform any of our implemented models. From our results table, we observed that our models have F1-Score and Accuracy performances at around _0.95_, indicating they are high-performing classifiers. The best of them is the **SVM+ALL(TF-IDF) classifier**, or the Support Vector Machine with the All Vector Vocabulary List and Tf-Idf Representations, which uses the vocabulary from both NER results and AutoPhrase results. Because the quality phrases between different domains are likely to differ, we expect these results to be optimal features for our predictors. 
