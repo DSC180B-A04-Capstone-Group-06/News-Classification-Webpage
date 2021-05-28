@@ -86,10 +86,10 @@ SVM + ET(TF-IDF) | 0.8259 | 0.8282
 SVM + AP(TF-IDF) | 0.8105 | 0.8125
 SVM + ALL(TF-IDF) | 0.8466 | 0.8483
 
-UNI: Uni-gram Vocabulary List
-ET : Entity Vocabulary List
-AP : AutoPhrase Vocabulary List
-ALL: All Vectors Vocabulary Lis
+UNI: Uni-gram Vocabulary List,
+ET : Entity Vocabulary List,
+AP : AutoPhrase Vocabulary List,
+ALL: All Vectors Vocabulary List.
 
 ## Conclusion
 
